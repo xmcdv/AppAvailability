@@ -55,6 +55,7 @@ public class AppAvailability extends CordovaPlugin {
         JSONObject json = new JSONObject();
         json.put("version", info.versionName);
         json.put("appId", info.packageName);
+        json.put("versionCode", info.versionCode); // xmcdv
 
         return json;
     }
